@@ -48,3 +48,19 @@ std::ostream& operator <<(std::ostream& out, House& x) {
 
     return out;
 }
+
+bool operator == (House& l, House& r) {
+
+    bool res = false;
+
+    if (l.id == r.id && 
+        l.number_house == r.number_house && 
+        l.floor == r.floor && 
+        l.count_room == r.count_room && 
+        l.street == r.street) 
+    {
+        res = true;
+    }
+
+    return res;
+}
