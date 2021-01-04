@@ -15,7 +15,7 @@ private:
     std::string street;
 
     friend std::istream& operator >>(std::istream& in, House& x);
-
+    friend std::ostream& operator <<(std::ostream& out, House& x);
 public:
     House();
     House(int id, int number_house, int square, int floor, int count_room, std::string street);

@@ -37,3 +37,14 @@ std::istream& operator >>(std::istream& in, House& x) {
 
     return in;
 }
+
+std::ostream& operator <<(std::ostream& out, House& x) {
+
+    out << "id\t\t" << x.id
+        << "\nnumber room\t" << x.number_house
+        << "\nsquare\t\t" << x.floor
+        << "\ncount rooms\t" << x.count_room
+        << "\nstreet\t\t" << x.street << "\n-----------\n";
+
+    return out;
+}

@@ -6,5 +6,7 @@ int main() {
 
     std::cin >> ob1 >> ob2 >> ob3;
 
+    std::cout << ob1 << ob2 << ob3;
+
     return 0;
 }
